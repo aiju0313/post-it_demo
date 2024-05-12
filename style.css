@@ -1,0 +1,73 @@
+#memoArea{
+    background-color: #EEEEEE;
+    border: solid 1px #999999;
+    width: 620px;
+    height: 480px;
+    padding: 10px;
+}
+
+.memo{
+text-decoration: none;
+color: #000000;
+position: absolute;
+left: 50px;
+top: 80px;
+border: solid 1px #999999;
+width: 180px;
+height: 40px;
+padding: 10px;
+}
+
+.yellow{
+    background-color: #FFFFCC;
+}
+.red{
+    background-color: #FFCCCC;
+}
+.green{
+    background-color: #CCFFCC;
+}
+
+
+form{
+    background-color: #CCCCCC;
+    border: solid 1px #999999;
+    width: 620px;
+    padding: 10px;
+}
+
+.fat{
+    position: relative;
+    width: 620px;
+    text-align: right;
+}
+
+
+i{
+    font-size: 50px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+
+.description{
+width: 150px; /* 横幅 */
+  position: absolute;
+  top: 50%;
+  left: 105%; /* X軸の位置 */
+  transform: translateY(-50%);
+  padding: 8px;
+  border-radius: 10px; /* 角の丸み */
+  background-color: #666;
+  font-size: 0.7em;
+  color: #fff;
+  text-align: center;
+  visibility: hidden; /* ツールチップを非表示に */
+  opacity: 0; /* 不透明度を0％に */
+  z-index: 1;
+  transition: 0.3s all; /* マウスオーバー時のアニメーション速度 */
+}
+
+.fat:hover .description { /* マウスオーバー時のスタイル */
+    visibility: visible; /* ツールチップを表示 */
+    opacity: 1; /* 不透明度を100％に */
+  }
